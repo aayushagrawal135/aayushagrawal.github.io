@@ -1,10 +1,14 @@
-.current-reading-list {
+.section {
     font-family: 'Courier New', Courier, monospace;
 } 
 
-.current-reading-list ul {
+.section ul {
     list-style-type: none;
     padding: 0;
+    
+}
+
+.center-section ul {
     text-align: center;
 }
 
@@ -16,7 +20,7 @@
 }
 
 .back-to-top {
-    
+
     text-align: right;
 }
 
