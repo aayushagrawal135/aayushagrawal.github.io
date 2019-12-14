@@ -1,0 +1,53 @@
+.topnav {
+    background-color: lightgreen;
+    overflow: auto;
+}
+
+.topnav ul {
+    padding: 0;
+}
+
+.topnav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1em 1.5em;
+    color: blue;
+}
+
+.topnav a:visited {
+    text-decoration: none;
+    color: blue;
+}
+
+.topnav a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+}
+
+.current-reading-list {
+    font-family: 'Courier New', Courier, monospace;
+} 
+
+.current-reading-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.subject {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-style: solid;
+}
+
+.back-to-top {
+    text-align: right;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
