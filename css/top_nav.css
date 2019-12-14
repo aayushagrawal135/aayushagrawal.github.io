@@ -1,0 +1,12 @@
+.topnav {
+    background-color: lightgreen;
+    overflow: auto;
+}
+
+.topnav ul {
+    padding: 0;
+}
+
+.topnav a {
+    padding: 1em 1.5em;
+}
