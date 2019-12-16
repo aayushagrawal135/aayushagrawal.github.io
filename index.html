@@ -6,21 +6,25 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/top_nav.css">
         <link rel="stylesheet" href="css/button.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script> 
+            $(function(){
+                $("#main-navbar").load("html/main_nav.html");
+                $("#reading-list").load("html/reading_list.html");
+                $("#bookmarks").load("html/bookmarks.html");
+                $("#til").load("html/til.html");
+                $("#articles").load("html/articles.html");
+                $("#year-throwback").load("html/year_throwback.html");
+                $("#find-me").load("html/find_me.html");
+            });
+        </script> 
+
     </head>
 
     <body>
         <!--Top nav bar-->
-        <div class="topnav button" id="main-navbar">
-            <ul>
-                <a href="#Home">Home</a>
-                <a href="#reading-list">Current Reading List</a>
-                <a href="#bookmarks">Bookmarks</a>
-                <a href="#til">TIL</a>
-                <a href="#articles">Articles</a>
-                <a href="#year-throwback">Year Throwback</a>
-                <a href="#find-me">Find Me Here</a>
-            </ul>
-        </div>
+        <div class="topnav button" id="main-navbar"></div>
        
         
         <!-- Home -->
@@ -28,85 +32,26 @@
 
 
         <!-- Reading list page-->
-        <div class="section center-section" id="reading-list">
-            <div class="subject">
-                <h2>Books that I am/will be reading soon!</h2>
-            </div>
-            <ul>
-                <li>Permanent Record</li>
-                <li>How to Win Friends and Influence People</li>
-                <li>Explain Cloud Like I'm 10</li>
-                <li>Deep Learning</li>
-                <li>The Intelligent Investor</li>
-            </ul>
-            <div class="back-to-top button">
-                <a href="#main-navbar">Back To Top</a>
-            </div>
-        </div>
+        <div class="section center-section" id="reading-list"></div>
 
 
         <!-- Bookmarks -->
-        <div class="section center-section" id="bookmarks">
-            <div class="subject">
-                <h2>Bookmarks</h2>
-            </div>
-
-            <div class="back-to-top button">
-                <a href="#main-navbar">Back To Top</a>
-            </div>
-        </div>
+        <div class="section center-section" id="bookmarks"></div>
 
 
         <!-- TIL -->
-        <div class="section center-section" id="til">
-            <div class="subject">
-                <h2>TIL</h2>
-            </div>
-
-            <div class="back-to-top button">
-                <a href="#main-navbar">Back To Top</a>
-            </div>
-        </div>
+        <div class="section center-section" id="til"></div>
 
 
         <!-- Articles -->
-        <div class="section center-section" id="articles">
-            <div class="subject">
-                <h2>Articles</h2>
-            </div>
-
-            <div class="back-to-top button">
-                <a href="#main-navbar">Back To Top</a>
-            </div>
-        </div>
+        <div class="section center-section" id="articles"></div>
 
 
         <!-- Year throwback -->
-        <div class="section center-section" id="year-throwback">
-            <div class="subject">
-                <h2>Year Throwback</h2>
-            </div>
-            <ul>
-                <li>2019</li>
-            </ul>
-            <div class="back-to-top button">
-                <a href="#main-navbar">Back To Top</a>
-            </div>
-        </div>
+        <div class="section center-section" id="year-throwback"></div>
 
 
         <!-- Find me here -->
-        <div class="section center-section" id="find-me">
-            <div class="subject">
-                <h2>Find me here</h2>
-            </div>
-            <ul>
-                <li>Twitter</li>
-                <li>LinkedIn</li>
-            </ul>
-            <div class="back-to-top button">
-                <a href="#main-navbar">Back To Top</a>
-            </div>
-        </div>
+        <div class="section center-section" id="find-me"></div>
     </body>
 </html>
