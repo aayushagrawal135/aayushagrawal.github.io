@@ -11,7 +11,7 @@
         <script> 
             $(function(){
                 $("#main-navbar").load("html/main_nav.html");
-                $("#reading-list").load("html/reading_list.html");
+                //$("#reading-list").load("html/reading_list.html");
                 $("#bookmarks").load("html/bookmarks.html");
                 $("#til").load("html/til.html");
                 $("#articles").load("html/articles.html");
@@ -19,7 +19,10 @@
                 $("#find-me").load("html/find_me.html");
             });
         </script> 
-
+        <script src="js/section.js"></script>
+        <script src="js/list.js"></script>
+        <script src="js/title.js"></script>
+        <script src="js/backtonav.js"></script>
     </head>
 
     <body>
@@ -31,9 +34,18 @@
         <img src="images/kid_kakashi.jpg" alt="Happy Face" height="510" width="400">
 
 
-        <!-- Reading list page-->
-        <div class="section center-section" id="reading-list"></div>
+        <!-- Reading list page
+        <div class="section center-section" id="reading-list"></div>          
+            -->
 
+        <script>
+            var id = "reading-list";
+            var title = "Books that I am/will be reading soon!";
+            var books = ["Permanent Record", "How to Win Friends and Influence People", "Explain Cloud Like I'm 10",
+                         "Deep Learning", "The Intelligent Investor"];
+
+            makeSection (id, makeTitle (id, title, makeList (id, books, makeBackButton (id)))) ; 
+        </script>
 
         <!-- Bookmarks -->
         <div class="section center-section" id="bookmarks"></div>
